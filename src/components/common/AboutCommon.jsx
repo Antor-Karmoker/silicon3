@@ -7,7 +7,7 @@ const AboutCommon = () => {
     <div>
 
         <div className='w-[306px] h-[350px] relative rounded-[8px]'>
-            <div className='w-[44px] h-[44px] absolute top-[-20px] left-[32px] flex justify-center items-center rounded-[8px] bg-[#6366F1]'><RiDoubleQuotesL className='text-[20px] text-white' /></div>
+            <div className='w-[44px] h-[44px] absolute top-[-20px] left-[32px] flex justify-center z-20 items-center rounded-[8px] bg-[#6366F1]'><RiDoubleQuotesL className='text-[20px] text-white' /></div>
             <div className='w-full h-[258px] pt-[48px] px-[24px]  shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-[8px]'>
                 <div className='w-[263px] ' ><p className='text-[16px] font-normal font-main text-primary'>Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare consectetur.</p></div>
 

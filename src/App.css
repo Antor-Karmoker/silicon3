@@ -1,1 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.slick-slide {
+    margin-top: 20px !important;
+}
+
+.slick-arrow{
+    width: 36px;
+    height: 36px;
+    background: #fff;
+box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    position: relative;
+    padding: 8px;
+}
+
+.slick-next{
+    position: absolute;
+    top: 250px;
+    left: -284px;
+}
+.slick-prev{
+    position: absolute;
+    top: 250px;
+    left:-192px;
+}

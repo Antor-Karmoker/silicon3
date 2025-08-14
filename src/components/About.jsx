@@ -3,19 +3,21 @@ import CommonHead from './common/CommonHead'
 import AboutCommon from './common/AboutCommon'
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
-import { IoArrowForwardSharp } from "react-icons/io5";
-import { IoArrowBackOutline } from "react-icons/io5";
+import { IoIosArrowForward } from "react-icons/io";
+import { MdArrowBackIosNew } from "react-icons/md";
 
 const About = () => {
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
+    // autoplay: true,
+    autoplaySpeed: 600,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-      nextArrow: <IoArrowForwardSharp />,
-    prevArrow: <IoArrowBackOutline />
+      nextArrow: < MdArrowBackIosNew />,
+    prevArrow: <IoIosArrowForward />
   };
 
 
@@ -24,22 +26,34 @@ const About = () => {
     
     
     
-    <section id='about' className='pt-[112px]'>
+    <section id='about' className='pt-[112px] flex'>
         <div className="container">
-            <div id='about-row' className='flex gap-[80px]'>
+          <div className=''>
 
                 <div className='w-[250px]'><CommonHead comh2={'What People Say About Us'} /></div>
 
+   <div className="slider-container mt-[-164px] pl-[400px]">
+ 
+             <Slider {...settings}>
+      <div>
+          <AboutCommon />
+      </div>
+      <div>
+      <AboutCommon />
+      </div>
+      <div>
+         <AboutCommon />
+      </div>
+           <div>
+         <AboutCommon />
+      </div>
 
 
+    </Slider>
+    </div>
 
-                <div className='flex gap-[24px]'>
-                    <AboutCommon />
-                    <AboutCommon />
-                    <AboutCommon />
-                </div>
 
-            </div>
+          </div>
         </div>
     </section>
     
